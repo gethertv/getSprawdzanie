@@ -1,5 +1,5 @@
 
-package dev.gether.getgenblock.utils;
+package dev.gether.getsprawdzanie.utils;
 
 import org.bukkit.ChatColor;
 

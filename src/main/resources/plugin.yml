@@ -2,3 +2,9 @@ name: getSprawdzanie
 version: '${project.version}'
 main: dev.gether.getsprawdzanie.GetSprawdzanie
 api-version: '1.16'
+softdepend: [Multiverse-Core]
+commands:
+  przyznajesie:
+    aliases: ["admit"]
+  getsprawdz:
+    aliases: [sprawdz]

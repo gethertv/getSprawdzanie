@@ -1,0 +1,54 @@
+# permission:  getsprawdz.admin
+# sprawdz <nick>
+# sprawdz ban
+# sprawdz czysty
+# sprawdz reload
+# przyznajesie - bez uprawnien
+
+whitelist-cmd:
+  - "/przyznajsie"
+  - "/admit"
+  - "/msg"
+  - "/reply"
+  - "/helpop"
+
+admit:
+  teleport-loc: {}
+  spawn: {}
+
+przyznajesie-cmd:
+  - "tempban {player} 7d Powod"
+
+ban-cmd:
+  - "ban {player} Czity!"
+
+leave-cmd:
+  - "tempban {player} 14d Wychodzenie podczas sprawdzania"
+
+
+lang:
+  cannot-use-cmd: "&cNie mozesz tej komendy podczas sprawdzania"
+  no-admit: "&cNie jestes sprawdzany!"
+  admit:
+    broadcast:
+      - "&7Gracz {target} jest sprawdzany przez &f{admin}"
+      - "&7Gracz {target} jest sprawdzany przez &f{admin}"
+      - "&7Gracz {target} jest sprawdzany przez &f{admin}"
+    target:
+      - "&7Jestes sprawdzany przez &f{admin}"
+      - "&7Jestes sprawdzany przez &f{admin}"
+      - "&7Jestes sprawdzany przez &f{admin}"
+    accept:
+      - "&7Gracz {target} przyznal sie czitow!"
+      - "&7Gracz {target} przyznal sie czitow!"
+      - "&7Gracz {target} przyznal sie czitow!"
+    pure:
+      - "&7Gracz {target} okazal sie czysty!"
+      - "&7Gracz {target} okazal sie czysty!"
+      - "&7Gracz {target} okazal sie czysty!"
+    ban:
+      - "&7Admin {admin} sprawdzil {target}"
+      - "&7i okazalo sie ze czitowal!"
+    logout:
+      - "&7Gracz {target} wyszedl z serwera"
+      - "&7podczas sprawdzania"
